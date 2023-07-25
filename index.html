@@ -30,35 +30,79 @@
     <title>Justice</title>
   </head>
   <body>
-    <header class="container mx-auto">
-      <nav class="flex justify-between items-center my-16">
-        <div>
-          <img src="./images/logo.png" alt="" />
+    <header class="container mx-auto my-12">
+      <div class="navbar bg-base-100">
+        <div class="flex navbar-start">
+          <a class="btn btn-ghost normal-case text-xl"
+            ><img class="mr-44" src="./images/logo.png" alt=""
+          /></a>
         </div>
-        <div class="flex gap-32 items-center">
+        <div class="navbar-center">
           <ul
-            class="flex gap-7 items-center text-[#707070] font-poppins font-normal text-sm"
+            class="flex lg:flex-row md:flex-row menu menu-horizontal px-1 font-normal text-[#707070] font-poppins text-lg"
           >
-            <li class="cursor-pointer">Home</li>
-            <li class="cursor-pointer">
-              Services <i class="fa-solid fa-chevron-right"></i>
+            <li>
+              <a>Home <i class="fa-solid fa-chevron-right"></i></a>
             </li>
-            <li class="cursor-pointer">
-              Cases <i class="fa-solid fa-chevron-right"></i>
+            <li>
+              <a>Services <i class="fa-solid fa-chevron-right"></i></a>
             </li>
-            <li class="cursor-pointer">
-              Blog <i class="fa-solid fa-chevron-right"></i>
+            <li>
+              <a>Cases <i class="fa-solid fa-chevron-right"></i></a>
             </li>
-            <li class="cursor-pointer">
-              Contact Us <i class="fa-solid fa-chevron-right"></i>
+            <li>
+              <a>Blog <i class="fa-solid fa-chevron-right"></i></a>
+            </li>
+            <li>
+              <a>Contact Us <i class="fa-solid fa-chevron-right"></i></a>
             </li>
           </ul>
-          <button class="btn no-animation text-white bg-[#B68C5A]">
-            Free Consultation
-          </button>
         </div>
-      </nav>
+        <div class="navbar-end">
+          <a
+            class="btn font-poppins font-extrabold text-lg text-white bg-[#B68C5A]"
+            >Free Consultation</a
+          >
+        </div>
+      </div>
     </header>
-    <main></main>
+
+    <main class="container my-32 mx-auto">
+      <!-- banner -->
+      <div
+        class="hero mx-auto"
+        style="background-image: url('./images/banner.png')"
+      >
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-md">
+            <h1
+              class="mb-5 text-5xl font-extrabold font-EBGaramond text-white text-center"
+            >
+              We Provide Effective Legal Solutions
+            </h1>
+            <p
+              class="mb-5 text-[#e7e7e7] text-center font-poppins text-xs font-normal"
+            >
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humour..
+            </p>
+            <div class="flex gap-6 justify-center items-center">
+              <input
+                class="py-4 px-36 rounded-lg text-left border-none bg-white"
+                type="text"
+                placeholder="Search your services"
+              />
+              <button
+                class="btn py-4 px-10 bg-[#B68C5A] text-white rounded-lg border-none"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
